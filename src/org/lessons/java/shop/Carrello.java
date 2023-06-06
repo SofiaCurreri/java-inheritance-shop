@@ -52,6 +52,7 @@ public class Carrello {
                     System.out.println("Inserisci dimensione");
                     int dimensione = utente.nextInt();
 
+                    utente.nextLine(); // Consuma la nuova riga residua
                     System.out.println("Inserisci tipologia (smart tv/no smart)");
                     String tipo = utente.nextLine();
                     Televisore tv = new Televisore(nome, descrizione, prezzo, iva, dimensione, tipo);
@@ -63,7 +64,9 @@ public class Carrello {
             }
         }
 
-        System.out.println(carrello);
+        for (int i = 0; i < carrello.length; i++) {
+            System.out.print(carrello[i] + "\n");
+        }
 
 
     }

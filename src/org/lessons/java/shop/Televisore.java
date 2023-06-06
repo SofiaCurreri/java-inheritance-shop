@@ -10,6 +10,8 @@ public class Televisore extends Product{
         }
     @Override
     public String toString(){
-        return dimensione + tipo;
+        return super.toString() +
+                "\nDimensione (pollici): " + dimensione +
+                "\nTipo: " + tipo;
     }
 }

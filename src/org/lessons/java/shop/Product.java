@@ -70,7 +70,12 @@ public class Product {
     }
     @Override
     public String toString(){
-        return "Prodotto: " + code + name + description + price + iva;
+        setIva(iva);
+        return "Codice prodotto: " + code +
+                "\nNome prodotto: " + name +
+                "\nDescrizione: " + description +
+                "\nPrezzo: " + price + "€" +
+                "\nIva: " + getIva();
     }
 }
 

@@ -11,6 +11,8 @@ public class Cuffie extends Product{
 
     @Override
     public String toString(){
-        return colore + tipologia;
+        return super.toString() +
+                "\nColore: " + colore +
+                "\nTipologia: " + tipologia;
     }
 }
