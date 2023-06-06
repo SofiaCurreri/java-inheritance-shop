@@ -8,4 +8,9 @@ public class Cuffie extends Product{
         this.colore = colore;
         this.tipologia = tipologia;
     }
+
+    @Override
+    public String toString(){
+        return colore + tipologia;
+    }
 }

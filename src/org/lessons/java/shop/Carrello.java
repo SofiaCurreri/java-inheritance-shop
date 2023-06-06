@@ -1,5 +1,5 @@
 package org.lessons.java.shop;
-import java.util.Arrays;
+
 import java.util.Scanner;
 public class Carrello {
     public static void main(String[] args){
@@ -25,6 +25,7 @@ public class Carrello {
 
             System.out.println("Stai inserendo 1)Smartphone, 2)Cuffie o 3)Televisore?");
             String scelta = utente.nextLine();
+
             switch (scelta){
                 case "1":
                     System.out.println("Inserisci IMEI");
@@ -59,7 +60,7 @@ public class Carrello {
             }
         }
 
-        System.out.println(Arrays.toString(carrello));
+        System.out.println(carrello);
 
 
     }

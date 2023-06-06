@@ -68,5 +68,9 @@ public class Product {
     public String extendedName(){
         return this.code + "-" + this.name;
     }
+    @Override
+    public String toString(){
+        return "Prodotto: " + code + name + description + price + iva;
+    }
 }
 

@@ -9,4 +9,9 @@ public class Smartphone extends Product {
         this.imei = imei;
         this. memoria = memoria;
     }
+
+    @Override
+    public String toString(){
+        return imei + memoria;
+    }
 }

@@ -7,5 +7,9 @@ public class Televisore extends Product{
         super(name, description, price, iva);
         this.dimensione = dimensione;
         this.tipo = tipo;
+        }
+    @Override
+    public String toString(){
+        return dimensione + tipo;
     }
 }
