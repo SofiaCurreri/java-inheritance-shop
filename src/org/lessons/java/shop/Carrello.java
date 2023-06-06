@@ -13,16 +13,19 @@ public class Carrello {
         for (int i = 0; i < numProdotti; i++) {
             System.out.println("Inserisci nome prodotto");
             String nome = utente.nextLine();
+            utente.nextLine(); // Consuma la nuova riga residua
 
             System.out.println("Inserisci prezzo prodotto");
             double prezzo = utente.nextDouble();
 
             System.out.println("Inserisci una descrizione del prodotto");
             String descrizione = utente.nextLine();
+            utente.nextLine(); // Consuma la nuova riga residua
 
             System.out.println("Inserisci Iva (formato 0.##)");
             double iva = utente.nextDouble();
 
+            utente.nextLine(); // Consuma la nuova riga residua
             System.out.println("Stai inserendo 1)Smartphone, 2)Cuffie o 3)Televisore?");
             String scelta = utente.nextLine();
 
